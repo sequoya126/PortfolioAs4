@@ -2,6 +2,11 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
+import Footer from './components/shared/Footer'
+import Navbar from './components/shared/Navbar'
+
+
+import './styles/index.css'
 import './App.css'
 
 function App() {
