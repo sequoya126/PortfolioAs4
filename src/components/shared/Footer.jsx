@@ -1,14 +1,19 @@
-// src/components/shared/Footer.jsx
+import "../../styles/Footer.css";
+
 function Footer() {
   return (
     <footer className="footer">
-      <div className="footer-brand">Fraye</div>
-      <p className="footer-tagline">Placeholder tagline — pending Writer/Reader model.</p>
-      <div className="footer-creator-teaser">
-        <span>Want to sell your assets here?</span>
-        <span className="footer-badge">Creator program — coming soon</span>
+      <div className="footer-left">
+        <span className="footer-brand">Fraye</span>
+        <span className="footer-tagline">Curated assets for creators</span>
       </div>
-      <p className="footer-copy">&copy; 2026 Fraye. School project, not a real store.</p>
+      <div className="footer-right">
+        <span className="footer-creator-teaser">
+          Want to sell your assets here?{' '}
+          <span className="footer-creator-highlight">Creator program — coming soon</span>
+        </span>
+        <span className="footer-copyright">© 2026 Fraye. School project, not a real store.</span>
+      </div>
     </footer>
   );
 }

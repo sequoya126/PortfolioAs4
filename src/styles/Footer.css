@@ -1,0 +1,75 @@
+/* ---- Footer ---- */
+.footer {
+  background-color: #2D1F1A; /* Warm near-black, matching Navbar */
+  color: #FFE3B1; /* Light Apricot */
+  padding: 1.2rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.8rem 1.5rem;
+  border-top: 2px solid #D6764B; /* Burnt Peach accent line */
+  margin-top: 2rem; /* Spacing from content above */
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer-brand {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #FFE3B1;
+}
+
+.footer-tagline {
+  font-size: 0.85rem;
+  color: #D6764B; /* Burnt Peach */
+  font-weight: 400;
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.2rem;
+  text-align: right;
+}
+
+.footer-creator-teaser {
+  font-size: 0.85rem;
+  color: #98DBF3; /* Frosted Blue – subtle contrast */
+}
+
+.footer-creator-highlight {
+  color: #BA4727; /* Rusty Spice – attention-grabbing */
+  font-weight: 600;
+}
+
+.footer-copyright {
+  font-size: 0.7rem;
+  color: #5A3E36; /* Muted warm gray */
+  opacity: 0.7;
+}
+
+/* ---- Mobile Responsive ---- */
+@media (max-width: 600px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .footer-left {
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+
+  .footer-right {
+    align-items: center;
+    text-align: center;
+  }
+}

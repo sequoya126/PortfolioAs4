@@ -1,10 +1,13 @@
 import { useState } from 'react';
+import { useCart } from '../../context/CartContext';
 import { Link } from 'react-router-dom';
 import "../../styles/Navbar.css";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const closeMenu = () => setIsOpen(false);
+  const { cart } = useCart();
+  const itemCount = cart.reduce((total, item) => total + item.quantity, 0);
 
   return (
     <header className="navbar">
@@ -37,7 +40,12 @@ function Navbar() {
       <div className="navbar-actions">
         <button aria-label="Search">Search</button>
         <Link to="/checkout">
-          <button aria-label="Cart">Cart</button>
+          <button aria-label="Cart">
+            Cart
+            {itemCount > 0 && (
+              <span className="cart-badge">{itemCount}</span>
+            )}
+          </button>
         </Link>
       </div>
     </header>

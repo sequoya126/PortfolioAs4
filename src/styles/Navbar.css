@@ -147,3 +147,13 @@
     transform: translateY(-8px) rotate(-45deg);
   }
 }
+
+.cart-badge {
+  background: #BA4727;
+  color: #FFFFFF;
+  border-radius: 50%;
+  padding: 0.1rem 0.45rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  margin-left: 0.3rem;
+}

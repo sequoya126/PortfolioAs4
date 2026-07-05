@@ -1,0 +1,39 @@
+.about-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-content {
+  background: #FFFFFF;
+  padding: 2.5rem 3rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(45, 31, 26, 0.08);
+  border-left: 4px solid #BA4727; /* Rusty Spice accent */
+}
+
+.about-content h1 {
+  font-size: 2rem;
+  color: #2D1F1A;
+  margin-bottom: 1.2rem;
+}
+
+.about-content p {
+  font-size: 1.05rem;
+  color: #5A3E36;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.about-accent {
+  font-weight: 600;
+  color: #BA4727;
+  font-size: 1.15rem;
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 2px solid #FFE3B1;
+}

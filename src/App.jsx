@@ -4,6 +4,7 @@ import Footer from './components/shared/Footer';
 
 import Shop from "./pages/Shop";
 import Checkout from "./pages/Checkout";
+import About from "./pages/About";
 import Survey from "./pages/Survey";
 
 import { Routes, Route } from 'react-router-dom';
@@ -19,6 +20,7 @@ function App() {
           <Route path="/" element={<Shop />} />
           <Route path="/checkout" element={<Checkout />} />
           <Route path="/survey" element={<Survey />} />
+          <Route path="/about" element={<About />} />
           {/* Add product detail route later */}
         </Routes>
 
