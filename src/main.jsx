@@ -15,3 +15,13 @@ createRoot(document.getElementById('root')).render(
     </BrowserRouter>
   </StrictMode>
 );
+
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <BrowserRouter basename="/PortfolioAs4">  {/* ← Add this line */}
+      <CartProvider>
+        <App />
+      </CartProvider>
+    </BrowserRouter>
+  </React.StrictMode>
+);
