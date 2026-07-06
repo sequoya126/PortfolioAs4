@@ -1,0 +1,187 @@
+/* ---- Container ---- */
+.survey-container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.survey-card {
+  background: #FFFFFF;
+  border-radius: 20px;
+  padding: 2.5rem 3rem;
+  box-shadow: 0 8px 24px rgba(45, 31, 26, 0.08);
+  width: 100%;
+  border-top: 4px solid #BA4727; /* Rusty Spice accent */
+}
+
+/* ---- Header ---- */
+.survey-card h2 {
+  font-size: 1.8rem;
+  color: #2D1F1A;
+  margin: 0 0 0.3rem 0;
+}
+
+.survey-subtext {
+  color: #5A3E36;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* ---- Form ---- */
+.form-group {
+  margin-bottom: 1.8rem;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  color: #2D1F1A;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+/* ---- Star Rating ---- */
+.star-rating {
+  display: flex;
+  gap: 0.4rem;
+  font-size: 2.2rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.star {
+  color: #D6764B; /* Burnt Peach */
+  transition: color 0.2s, transform 0.1s;
+  user-select: none;
+}
+
+.star.active {
+  color: #BA4727; /* Rusty Spice */
+  transform: scale(1.1);
+}
+
+.star:hover {
+  transform: scale(1.2);
+}
+
+.rating-label {
+  display: block;
+  margin-top: 0.4rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #BA4727;
+}
+
+/* ---- Textarea ---- */
+textarea {
+  width: 100%;
+  padding: 0.7rem 1rem;
+  border: 1.5px solid #D6764B;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+  background: #FFF8F0;
+  color: #2D1F1A;
+  resize: vertical;
+  transition: border-color 0.2s;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #BA4727;
+  box-shadow: 0 0 0 2px rgba(186, 71, 39, 0.15);
+}
+
+/* ---- Buttons ---- */
+.survey-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.cancel-btn {
+  background: transparent;
+  border: 1.5px solid #D6764B;
+  color: #D6764B;
+  padding: 0.6rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.cancel-btn:hover {
+  background: #D6764B;
+  color: #FFFFFF;
+}
+
+.submit-btn {
+  background: #BA4727;
+  border: none;
+  color: #FFFFFF;
+  padding: 0.6rem 1.8rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.submit-btn:hover {
+  background: #D6764B;
+}
+
+/* ---- Thank You State ---- */
+.survey-thanks {
+  text-align: center;
+  padding: 0.5rem 0;
+}
+
+.thanks-icon {
+  font-size: 4rem;
+  margin-bottom: 0.5rem;
+}
+
+.survey-thanks h2 {
+  color: #2D1F1A;
+}
+
+.survey-thanks p {
+  color: #5A3E36;
+  font-size: 1.05rem;
+  margin-bottom: 2rem;
+}
+
+.thanks-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 600px) {
+  .survey-card {
+    padding: 1.5rem 1.2rem;
+  }
+
+  .star-rating {
+    font-size: 1.8rem;
+  }
+
+  .survey-actions {
+    flex-direction: column;
+  }
+
+  .survey-actions button {
+    width: 100%;
+  }
+
+  .thanks-actions {
+    flex-direction: column;
+  }
+}
