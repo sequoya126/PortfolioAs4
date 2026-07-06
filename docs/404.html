@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Fraye</title>
+    <script>
+      // Get the full path after the base
+      var path = window.location.pathname;
+      // Remove the base prefix if present
+      var base = '/PortfolioAs4';
+      if (path.startsWith(base)) {
+        path = path.slice(base.length) || '/';
+      }
+      // Redirect to index.html with the path in the hash or query
+      window.location.replace(base + '/index.html' + '?path=' + encodeURIComponent(path));
+    </script>
+  </head>
+  <body>
+    <p>Redirecting...</p>
+  </body>
+</html>
