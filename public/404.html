@@ -4,9 +4,15 @@
     <meta charset="utf-8" />
     <title>Fraye</title>
     <script>
-      // Preserve the path and redirect to index.html
-      var path = window.location.pathname.replace('/PortfolioAs4', '');
-      window.location.replace('/PortfolioAs4' + path + window.location.search);
+      // Get the full path after the base
+      var path = window.location.pathname;
+      // Remove the base prefix if present
+      var base = '/PortfolioAs4';
+      if (path.startsWith(base)) {
+        path = path.slice(base.length) || '/';
+      }
+      // Redirect to index.html with the path in the hash or query
+      window.location.replace(base + '/index.html' + '?path=' + encodeURIComponent(path));
     </script>
   </head>
   <body>
